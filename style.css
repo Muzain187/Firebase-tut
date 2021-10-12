@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: o;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75)50%, rgba(0, 0, 0, 0.75)50%), url(ASHRAF.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/*  */
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 100px;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 8px;
+    padding-top: 40px;
+}
+
+.icon h2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.icon h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgb(255, 241, 46);
+}
+
+.icon h2:nth-child(2) {
+    color: rgb(255, 241, 46);
+    animation: waterflow 4s ease-in-out infinite;
+}
+
+@keyframes waterflow {
+    0%,
+    100% {
+        clip-path: polygon(0 71%, 9% 58%, 28% 44%, 49% 38%, 67% 43%, 86% 57%, 100% 73%, 100% 99%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 34%, 12% 46%, 29% 59%, 53% 65%, 72% 61%, 90% 51%, 100% 38%, 100% 100%, 0% 100%);
+    }
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-weight: normal;
+    transition: 0.4s ease;
+    background: transparent;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border-radius: 5px;
+    border: none;
+}
+
+ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.searching {
+    padding-top: 50px;
+    padding-right: 100px;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    font-family: "Candara", sans-serif;
+    position: absolute;
+    background: #ffffff;
+    height: 23px;
+    padding: 10px;
+    border-radius: 23px;
+    box-shadow: 0 0 25px 0 rgba(51, 58, 69, 0.4);
+}
+
+.search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(0, 56, 47);
+    font-size: 16px;
+    line-height: 23px;
+    width: 0px;
+    transition: all 0.5s;
+}
+
+.search-box:hover input {
+    width: 200px;
+    padding: 0 6px;
+}
+
+.search-box input:focus {
+    width: 200px;
+    padding: 0 6px;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    outline: none;
+    width: 30px;
+    margin-top: -21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-btn i {
+    z-index: 1;
+    background: #fbff05;
+    font-size: 20px;
+    color: rgb(0, 56, 47);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 25px 0 rgba(243, 240, 59, 0.4);
+}
+
+.content {
+    text-align: center;
+    width: 1200px;
+    height: auto;
+    margin-top: 200px;
+    margin-left: 150px;
+    color: yellow;
+    position: relative;
+}
+
+.content p {
+    padding-left: 8px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: white;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 8px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
